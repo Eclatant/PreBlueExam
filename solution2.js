@@ -3,8 +3,8 @@ function parseData(map_string) {
   let arr = map_string.split(",");
 
   let map_data = {
-    width: arr[0],
-    height: arr[1].split("\n")[0],
+    width: parseInt(arr[0]),
+    height: parseInt(arr[1].split("\n")[0]),
     data: arr[1].split("\n").slice(1,-1)
   }
 
